@@ -49,12 +49,13 @@
   }
   .nav-logo {
     font-family: var(--serif);
-    font-size: 1.35rem;
-    font-weight: 400;
-    letter-spacing: 0.12em;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--white);
     text-decoration: none;
+    text-shadow: 0 0 30px rgba(126,232,232,0.4);
   }
   .nav-links { display: flex; gap: 2.5rem; list-style: none; }
   .nav-links a {
@@ -484,41 +485,45 @@
     <div>
       <p class="section-tag">Who We Are</p>
       <h2 class="section-title">
-        Built for the limits<br>of what's possible
+        Heat is the wall.<br><em style="color:var(--cyan); font-style:italic;">We break it.</em>
       </h2>
+      <div style="width:40px; height:1px; background:var(--cyan); margin: 1.5rem 0; opacity:0.6;"></div>
       <p class="section-body">
-        Stemonds is a team of engineers united by a single conviction: the most important material breakthroughs of the coming decade will be thermal ones. As AI chips grow more powerful, EV powertrains more demanding, and spacecraft more capable — heat becomes the limiting factor.
+        Stemonds is a team of engineers united by a single conviction — the most critical material challenge of the next decade is <span style="color:var(--white); font-weight:400;">thermal</span>. As AI chips grow more powerful, EV powertrains more demanding, and spacecraft more capable, heat becomes the hard limit.
       </p>
       <br>
       <p class="section-body">
-        We grow lab-grown diamond and deliver it to US clients and research institutions who need the most thermally capable material on Earth, engineered to their exact specifications.
+        We grow <span style="color:var(--white); font-weight:400;">lab-grown diamond</span> — the most thermally capable material on Earth — and engineer it to exact specifications for US clients and research institutions pushing the boundaries of what's possible.
+      </p>
+      <br>
+      <p class="section-body">
+        Beyond thermal management, diamond's unique combination of hardness, wide bandgap, optical transparency, and quantum properties makes it one of the most versatile advanced materials available — and we are only beginning to explore what it can do.
       </p>
     </div>
     <div class="about-visual">
-      <div class="diamond-shape">
+      <div class="diamond-shape" style="width:340px; height:340px;">
         <svg viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="dg1" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#7ee8e8" stop-opacity="0.3"/>
-              <stop offset="100%" stop-color="#c9b97a" stop-opacity="0.1"/>
+              <stop offset="0%" stop-color="#7ee8e8" stop-opacity="0.4"/>
+              <stop offset="100%" stop-color="#c9b97a" stop-opacity="0.15"/>
             </linearGradient>
             <linearGradient id="dg2" x1="100%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#7ee8e8" stop-opacity="0.15"/>
+              <stop offset="0%" stop-color="#7ee8e8" stop-opacity="0.2"/>
               <stop offset="100%" stop-color="#7ee8e8" stop-opacity="0.05"/>
             </linearGradient>
           </defs>
-          <!-- Main diamond -->
-          <polygon points="140,20 260,110 210,260 70,260 20,110" fill="url(#dg1)" stroke="#7ee8e8" stroke-width="1" stroke-opacity="0.4"/>
-          <!-- Top facets -->
-          <polygon points="140,20 260,110 140,140 20,110" fill="url(#dg2)" stroke="#7ee8e8" stroke-width="0.5" stroke-opacity="0.3"/>
-          <!-- Side facets -->
-          <polygon points="260,110 210,260 140,140" fill="none" stroke="#c9b97a" stroke-width="0.5" stroke-opacity="0.3"/>
-          <polygon points="20,110 70,260 140,140" fill="none" stroke="#c9b97a" stroke-width="0.5" stroke-opacity="0.3"/>
-          <polygon points="140,140 210,260 70,260" fill="none" stroke="#7ee8e8" stroke-width="0.5" stroke-opacity="0.2"/>
-          <!-- Sparkle dots -->
-          <circle cx="140" cy="20" r="2.5" fill="#7ee8e8" opacity="0.8"/>
-          <circle cx="260" cy="110" r="2" fill="#7ee8e8" opacity="0.5"/>
-          <circle cx="20" cy="110" r="2" fill="#c9b97a" opacity="0.5"/>
+          <polygon points="140,20 260,110 210,260 70,260 20,110" fill="url(#dg1)" stroke="#7ee8e8" stroke-width="1.2" stroke-opacity="0.6"/>
+          <polygon points="140,20 260,110 140,140 20,110" fill="url(#dg2)" stroke="#7ee8e8" stroke-width="0.8" stroke-opacity="0.4"/>
+          <polygon points="260,110 210,260 140,140" fill="none" stroke="#c9b97a" stroke-width="0.8" stroke-opacity="0.4"/>
+          <polygon points="20,110 70,260 140,140" fill="none" stroke="#c9b97a" stroke-width="0.8" stroke-opacity="0.4"/>
+          <polygon points="140,140 210,260 70,260" fill="none" stroke="#7ee8e8" stroke-width="0.8" stroke-opacity="0.3"/>
+          <circle cx="140" cy="20" r="3.5" fill="#7ee8e8" opacity="1"/>
+          <circle cx="260" cy="110" r="2.5" fill="#7ee8e8" opacity="0.7"/>
+          <circle cx="20" cy="110" r="2.5" fill="#c9b97a" opacity="0.7"/>
+          <circle cx="210" cy="260" r="2.5" fill="#7ee8e8" opacity="0.5"/>
+          <circle cx="70" cy="260" r="2.5" fill="#c9b97a" opacity="0.5"/>
+          <circle cx="140" cy="140" r="2" fill="#7ee8e8" opacity="0.4"/>
         </svg>
       </div>
       <div class="facet-ring"></div>
@@ -608,23 +613,23 @@
     </p>
     <div class="properties-grid">
       <div class="prop-item">
-        <span class="prop-value">Thermal</span>
-        <span class="prop-name">Conductivity</span>
+        <span class="prop-value">Unmatched</span>
+        <span class="prop-name">Heat Transfer</span>
         <p class="prop-desc">The highest thermal conductivity of any bulk material — far exceeding conventional options used in power electronics today.</p>
       </div>
       <div class="prop-item">
-        <span class="prop-value">Thermal</span>
-        <span class="prop-name">Stability</span>
+        <span class="prop-value">Extreme</span>
+        <span class="prop-name">Temperature Stability</span>
         <p class="prop-desc">Maintains structural integrity and performance across the extreme temperature ranges encountered in space, automotive, and industrial environments.</p>
       </div>
       <div class="prop-item">
-        <span class="prop-value">Mass</span>
-        <span class="prop-name">Efficiency</span>
+        <span class="prop-value">Minimal</span>
+        <span class="prop-name">Weight Penalty</span>
         <p class="prop-desc">Delivers superior thermal performance at a fraction of the weight of conventional metal-based cooling solutions — critical for aerospace and EV applications.</p>
       </div>
       <div class="prop-item">
-        <span class="prop-value">Electrical</span>
-        <span class="prop-name">Insulation</span>
+        <span class="prop-value">Zero</span>
+        <span class="prop-name">Electrical Interference</span>
         <p class="prop-desc">An exceptional electrical insulator, enabling thermal management directly integrated into high-voltage power electronics without risk of short circuits.</p>
       </div>
     </div>
@@ -799,6 +804,32 @@
   window.addEventListener('resize', () => { resize(); });
   draw();
 })();
+</script>
+
+<script>
+// Scroll reveal animations
+const revealEls = document.querySelectorAll(
+  '.section-tag, .section-title, .section-body, .app-card, .prop-item, .about-grid > div, .contact-card, .contact-inner > *'
+);
+
+revealEls.forEach((el, i) => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(30px)';
+  el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+  el.style.transitionDelay = (i % 4) * 0.1 + 's';
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+revealEls.forEach(el => observer.observe(el));
 </script>
 </body>
 </html>
