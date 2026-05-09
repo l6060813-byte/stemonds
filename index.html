@@ -462,7 +462,7 @@
     <h1 class="hero-title">
       Diamond material<br><em>for the next era.</em>
     </h1>
-    <p style="font-family:var(--serif); font-size:1.1rem; color:var(--cyan); font-style:italic; margin-bottom:2rem; opacity:0; animation: fade-up 0.8s ease forwards 0.6s;">The world knows diamond as jewelry. We see the material that rewrites what a chip can be.</p>
+    <p style="font-family:var(--serif); font-size:1.4rem; font-weight:300; color:rgba(245,244,240,0.65); font-style:italic; margin: 1.5rem auto 2.5rem; max-width:600px; line-height:1.5; opacity:0; animation: fade-up 0.8s ease forwards 0.6s;">The world knows diamond as jewelry.<br>We see the material that rewrites what a chip can be.</p>
     
     <div class="hero-cta">
       <a href="#contact" class="btn-primary">Get in Touch</a>
@@ -479,49 +479,82 @@
 
 <!-- ABOUT -->
 <section id="about">
-  <div class="about-grid">
-    <div>
+  <div style="max-width: 700px; margin: 0 auto;">
       <p class="section-tag">The Company</p>
       <h2 class="section-title">
         Where materials science<br>meets the next frontier.
       </h2>
       <div style="width:40px; height:1px; background:var(--cyan); margin: 1.5rem 0; opacity:0.6;"></div>
       <p class="section-body">
-        Stemonds is a team of engineers from Stanford and UCLA united by a single conviction — the most critical material challenge of the next decade is <span style="color:var(--white); font-weight:400;">thermal</span>. AI chips are getting faster. The heat they generate is getting harder to manage. Diamond — the world's best thermal conductor — is finally getting the attention it deserves.
+        Stemonds is a team of engineers from Stanford and UCLA united by a single conviction — thermal is one of the most challenging and consequential frontiers in advanced materials. AI chips are getting faster. The heat they generate is getting harder to manage. Diamond — the world's best thermal conductor — is finally getting the attention it deserves.
       </p>
       <br>
       <p class="section-body">
         We grow lab-grown diamond and engineer it to exact specifications for US clients and research institutions. Beyond thermal management, diamond's unique combination of hardness, wide bandgap, optical transparency, and quantum properties makes it one of the most versatile advanced materials ever studied — and we are only beginning to explore what it can do.
       </p>
-    </div>
+  </div>
+</section>
     <div class="about-visual">
-      <div class="diamond-shape" style="width:340px; height:340px;">
-        <svg viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="dg1" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#7ee8e8" stop-opacity="0.4"/>
-              <stop offset="100%" stop-color="#c9b97a" stop-opacity="0.15"/>
-            </linearGradient>
-            <linearGradient id="dg2" x1="100%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#7ee8e8" stop-opacity="0.2"/>
-              <stop offset="100%" stop-color="#7ee8e8" stop-opacity="0.05"/>
-            </linearGradient>
-          </defs>
-          <polygon points="140,20 260,110 210,260 70,260 20,110" fill="url(#dg1)" stroke="#7ee8e8" stroke-width="1.2" stroke-opacity="0.6"/>
-          <polygon points="140,20 260,110 140,140 20,110" fill="url(#dg2)" stroke="#7ee8e8" stroke-width="0.8" stroke-opacity="0.4"/>
-          <polygon points="260,110 210,260 140,140" fill="none" stroke="#c9b97a" stroke-width="0.8" stroke-opacity="0.4"/>
-          <polygon points="20,110 70,260 140,140" fill="none" stroke="#c9b97a" stroke-width="0.8" stroke-opacity="0.4"/>
-          <polygon points="140,140 210,260 70,260" fill="none" stroke="#7ee8e8" stroke-width="0.8" stroke-opacity="0.3"/>
-          <circle cx="140" cy="20" r="3.5" fill="#7ee8e8" opacity="1"/>
-          <circle cx="260" cy="110" r="2.5" fill="#7ee8e8" opacity="0.7"/>
-          <circle cx="20" cy="110" r="2.5" fill="#c9b97a" opacity="0.7"/>
-          <circle cx="210" cy="260" r="2.5" fill="#7ee8e8" opacity="0.5"/>
-          <circle cx="70" cy="260" r="2.5" fill="#c9b97a" opacity="0.5"/>
-          <circle cx="140" cy="140" r="2" fill="#7ee8e8" opacity="0.4"/>
-        </svg>
-      </div>
-      <div class="facet-ring"></div>
-      <div class="facet-ring-2"></div>
+      <svg id="about-lattice" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:400px; opacity:0.7;">
+        <!-- Static diamond cubic lattice - front face projection -->
+        <!-- Unit cell repeated 4x4 -->
+        <!-- Bonds -->
+        <g stroke="#7ee8e8" stroke-width="0.8" stroke-opacity="0.5">
+          <!-- Horizontal bonds -->
+          <line x1="60" y1="80" x2="160" y2="80"/><line x1="160" y1="80" x2="260" y2="80"/><line x1="260" y1="80" x2="360" y2="80"/>
+          <line x1="60" y1="180" x2="160" y2="180"/><line x1="160" y1="180" x2="260" y2="180"/><line x1="260" y1="180" x2="360" y2="180"/>
+          <line x1="60" y1="280" x2="160" y2="280"/><line x1="160" y1="280" x2="260" y2="280"/><line x1="260" y1="280" x2="360" y2="280"/>
+          <!-- Vertical bonds -->
+          <line x1="60" y1="80" x2="60" y2="180"/><line x1="60" y1="180" x2="60" y2="280"/>
+          <line x1="160" y1="80" x2="160" y2="180"/><line x1="160" y1="180" x2="160" y2="280"/>
+          <line x1="260" y1="80" x2="260" y2="180"/><line x1="260" y1="180" x2="260" y2="280"/>
+          <line x1="360" y1="80" x2="360" y2="180"/><line x1="360" y1="180" x2="360" y2="280"/>
+          <!-- Face center bonds -->
+          <line x1="110" y1="30" x2="60" y2="80"/><line x1="110" y1="30" x2="160" y2="80"/>
+          <line x1="210" y1="30" x2="160" y2="80"/><line x1="210" y1="30" x2="260" y2="80"/>
+          <line x1="310" y1="30" x2="260" y2="80"/><line x1="310" y1="30" x2="360" y2="80"/>
+          <line x1="110" y1="130" x2="60" y2="80"/><line x1="110" y1="130" x2="160" y2="80"/><line x1="110" y1="130" x2="60" y2="180"/><line x1="110" y1="130" x2="160" y2="180"/>
+          <line x1="210" y1="130" x2="160" y2="80"/><line x1="210" y1="130" x2="260" y2="80"/><line x1="210" y1="130" x2="160" y2="180"/><line x1="210" y1="130" x2="260" y2="180"/>
+          <line x1="310" y1="130" x2="260" y2="80"/><line x1="310" y1="130" x2="360" y2="80"/><line x1="310" y1="130" x2="260" y2="180"/><line x1="310" y1="130" x2="360" y2="180"/>
+          <line x1="110" y1="230" x2="60" y2="180"/><line x1="110" y1="230" x2="160" y2="180"/><line x1="110" y1="230" x2="60" y2="280"/><line x1="110" y1="230" x2="160" y2="280"/>
+          <line x1="210" y1="230" x2="160" y2="180"/><line x1="210" y1="230" x2="260" y2="180"/><line x1="210" y1="230" x2="160" y2="280"/><line x1="210" y1="230" x2="260" y2="280"/>
+          <line x1="310" y1="230" x2="260" y2="180"/><line x1="310" y1="230" x2="360" y2="180"/><line x1="310" y1="230" x2="260" y2="280"/><line x1="310" y1="230" x2="360" y2="280"/>
+          <line x1="110" y1="330" x2="60" y2="280"/><line x1="110" y1="330" x2="160" y2="280"/>
+          <line x1="210" y1="330" x2="160" y2="280"/><line x1="210" y1="330" x2="260" y2="280"/>
+          <line x1="310" y1="330" x2="260" y2="280"/><line x1="310" y1="330" x2="360" y2="280"/>
+          <!-- Tetrahedral bonds -->
+          <line x1="110" y1="130" x2="85" y2="105" stroke="#c9b97a" stroke-opacity="0.4"/>
+          <line x1="210" y1="130" x2="185" y2="105" stroke="#c9b97a" stroke-opacity="0.4"/>
+          <line x1="310" y1="130" x2="285" y2="105" stroke="#c9b97a" stroke-opacity="0.4"/>
+          <line x1="110" y1="230" x2="85" y2="205" stroke="#c9b97a" stroke-opacity="0.4"/>
+          <line x1="210" y1="230" x2="185" y2="205" stroke="#c9b97a" stroke-opacity="0.4"/>
+          <line x1="310" y1="230" x2="285" y2="205" stroke="#c9b97a" stroke-opacity="0.4"/>
+        </g>
+        <!-- Corner atoms -->
+        <g fill="#7ee8e8">
+          <circle cx="60" cy="80" r="4" opacity="0.9"/><circle cx="160" cy="80" r="4" opacity="0.9"/>
+          <circle cx="260" cy="80" r="4" opacity="0.9"/><circle cx="360" cy="80" r="4" opacity="0.9"/>
+          <circle cx="60" cy="180" r="4" opacity="0.9"/><circle cx="160" cy="180" r="4" opacity="0.9"/>
+          <circle cx="260" cy="180" r="4" opacity="0.9"/><circle cx="360" cy="180" r="4" opacity="0.9"/>
+          <circle cx="60" cy="280" r="4" opacity="0.9"/><circle cx="160" cy="280" r="4" opacity="0.9"/>
+          <circle cx="260" cy="280" r="4" opacity="0.9"/><circle cx="360" cy="280" r="4" opacity="0.9"/>
+        </g>
+        <!-- Face/interstitial atoms -->
+        <g fill="#7ee8e8" opacity="0.7">
+          <circle cx="110" cy="30" r="3"/><circle cx="210" cy="30" r="3"/><circle cx="310" cy="30" r="3"/>
+          <circle cx="110" cy="130" r="3"/><circle cx="210" cy="130" r="3"/><circle cx="310" cy="130" r="3"/>
+          <circle cx="110" cy="230" r="3"/><circle cx="210" cy="230" r="3"/><circle cx="310" cy="230" r="3"/>
+          <circle cx="110" cy="330" r="3"/><circle cx="210" cy="330" r="3"/><circle cx="310" cy="330" r="3"/>
+        </g>
+        <!-- Tetrahedral atoms gold -->
+        <g fill="#c9b97a" opacity="0.7">
+          <circle cx="85" cy="105" r="3"/><circle cx="185" cy="105" r="3"/><circle cx="285" cy="105" r="3"/>
+          <circle cx="85" cy="205" r="3"/><circle cx="185" cy="205" r="3"/><circle cx="285" cy="205" r="3"/>
+        </g>
+        <!-- Glow on select atoms -->
+        <circle cx="160" cy="180" r="8" fill="#7ee8e8" opacity="0.08"/>
+        <circle cx="210" cy="130" r="8" fill="#7ee8e8" opacity="0.08"/>
+      </svg>
     </div>
   </div>
 </section>
@@ -883,6 +916,70 @@
 </script>
 
 <script>
+// About section mini lattice
+(function() {
+  const canvas = document.getElementById('about-lattice');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const CELL = 65, N = 3;
+  const unitPos = [
+    [0,0,0],[1,0,0],[0,1,0],[1,1,0],[0,0,1],[1,0,1],[0,1,1],[1,1,1],
+    [0.5,0.5,0],[0.5,0,0.5],[0,0.5,0.5],[0.5,0.5,1],[0.5,1,0.5],[1,0.5,0.5],
+    [0.25,0.25,0.25],[0.75,0.75,0.25],[0.75,0.25,0.75],[0.25,0.75,0.75]
+  ];
+  function buildLattice() {
+    const atoms=[], map=new Map();
+    for (let ix=0;ix<N;ix++) for (let iy=0;iy<N;iy++) for (let iz=0;iz<N;iz++)
+      for (const [fx,fy,fz] of unitPos) {
+        const x=(ix+fx)*CELL,y=(iy+fy)*CELL,z=(iz+fz)*CELL;
+        const k=`${Math.round(x*10)},${Math.round(y*10)},${Math.round(z*10)}`;
+        if (!map.has(k)){map.set(k,atoms.length);atoms.push([x,y,z]);}
+      }
+    const bd=Math.sqrt(3)/4*CELL,tol=2,bonds=[];
+    for (let i=0;i<atoms.length;i++) for (let j=i+1;j<atoms.length;j++){
+      const dx=atoms[i][0]-atoms[j][0],dy=atoms[i][1]-atoms[j][1],dz=atoms[i][2]-atoms[j][2];
+      if (Math.abs(Math.sqrt(dx*dx+dy*dy+dz*dz)-bd)<tol) bonds.push([i,j]);
+    }
+    return {atoms,bonds};
+  }
+  const {atoms,bonds}=buildLattice();
+  const cx0=(N*CELL)/2,cy0=(N*CELL)/2,cz0=(N*CELL)/2;
+  const centered=atoms.map(([x,y,z])=>[x-cx0,y-cy0,z-cz0]);
+  function rotY(pts,a){const c=Math.cos(a),s=Math.sin(a);return pts.map(([x,y,z])=>[c*x+s*z,y,-s*x+c*z]);}
+  function rotX(pts,a){const c=Math.cos(a),s=Math.sin(a);return pts.map(([x,y,z])=>[x,c*y-s*z,s*y+c*z]);}
+  function resize(){canvas.width=canvas.offsetWidth;canvas.height=canvas.offsetHeight;}
+  let angle=0;
+  function draw(){
+    const W=canvas.width,H=canvas.height;
+    ctx.clearRect(0,0,W,H);
+    const rotated=rotX(rotY(centered,angle),0.35);
+    const fov=Math.max(W,H)*1.1;
+    const proj=rotated.map(([x,y,z])=>{const s=fov/(fov+z);return[W/2+x*s,H/2+y*s,z,s];});
+    bonds.map(([i,j])=>({i,j,z:(rotated[i][2]+rotated[j][2])/2})).sort((a,b)=>a.z-b.z)
+      .forEach(({i,j,z})=>{
+        const[x1,y1]=proj[i],[x2,y2]=proj[j];
+        const d=(z+fov)/(2*fov);
+        ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);
+        ctx.strokeStyle=`rgba(126,232,232,${0.15+d*0.5})`;
+        ctx.lineWidth=0.5+d*0.7;ctx.stroke();
+      });
+    proj.map((p,i)=>({p,i})).sort((a,b)=>a.p[2]-b.p[2]).forEach(({p})=>{
+      const[x,y,z]=p,d=(z+fov)/(2*fov),r=1+d*2;
+      ctx.beginPath();ctx.arc(x,y,r*2.2,0,Math.PI*2);
+      ctx.fillStyle=`rgba(126,232,232,${d*0.08})`;ctx.fill();
+      ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);
+      ctx.fillStyle=`rgba(200,240,240,${0.25+d*0.6})`;ctx.fill();
+    });
+    angle+=0.003;
+    requestAnimationFrame(draw);
+  }
+  resize();
+  window.addEventListener('resize',resize);
+  draw();
+})();
+</script>
+
+<script>
 // Scroll reveal animations
 const revealEls = document.querySelectorAll(
   '.section-tag, .section-title, .section-body, .app-card, .prop-item, .about-grid > div, .contact-card, .contact-inner > *'
@@ -909,7 +1006,93 @@ revealEls.forEach(el => observer.observe(el));
 </script>
 
 <script>
-// Floating particles
+// About section lattice
+(function() {
+  const canvas = document.getElementById('about-lattice');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+
+  const CELL = 55, N = 3;
+  const unitPos = [
+    [0,0,0],[1,0,0],[0,1,0],[1,1,0],
+    [0,0,1],[1,0,1],[0,1,1],[1,1,1],
+    [0.5,0.5,0],[0.5,0,0.5],[0,0.5,0.5],
+    [0.5,0.5,1],[0.5,1,0.5],[1,0.5,0.5],
+    [0.25,0.25,0.25],[0.75,0.75,0.25],
+    [0.75,0.25,0.75],[0.25,0.75,0.75]
+  ];
+
+  function buildLattice() {
+    const atoms = [], map = new Map();
+    for (let ix=0;ix<N;ix++) for (let iy=0;iy<N;iy++) for (let iz=0;iz<N;iz++)
+      for (const [fx,fy,fz] of unitPos) {
+        const x=(ix+fx)*CELL, y=(iy+fy)*CELL, z=(iz+fz)*CELL;
+        const k=`${Math.round(x*10)},${Math.round(y*10)},${Math.round(z*10)}`;
+        if (!map.has(k)) { map.set(k,atoms.length); atoms.push([x,y,z]); }
+      }
+    const bd=Math.sqrt(3)/4*CELL, tol=2, bonds=[];
+    for (let i=0;i<atoms.length;i++) for (let j=i+1;j<atoms.length;j++) {
+      const dx=atoms[i][0]-atoms[j][0],dy=atoms[i][1]-atoms[j][1],dz=atoms[i][2]-atoms[j][2];
+      if (Math.abs(Math.sqrt(dx*dx+dy*dy+dz*dz)-bd)<tol) bonds.push([i,j]);
+    }
+    return {atoms, bonds};
+  }
+
+  const {atoms, bonds} = buildLattice();
+  const cx0=(N*CELL)/2, cy0=(N*CELL)/2, cz0=(N*CELL)/2;
+  const centered = atoms.map(([x,y,z])=>[x-cx0,y-cy0,z-cz0]);
+
+  function rotY(pts,a){const c=Math.cos(a),s=Math.sin(a);return pts.map(([x,y,z])=>[c*x+s*z,y,-s*x+c*z]);}
+  function rotX(pts,a){const c=Math.cos(a),s=Math.sin(a);return pts.map(([x,y,z])=>[x,c*y-s*z,s*y+c*z]);}
+
+  function resize() {
+    const size = canvas.offsetWidth;
+    canvas.width = size;
+    canvas.height = size;
+  }
+
+  let angle = 0;
+  const TILT = 0.35;
+
+  function draw() {
+    const W = canvas.width, H = canvas.height;
+    ctx.clearRect(0,0,W,H);
+    const rotated = rotX(rotY(centered, angle), TILT);
+    const fov = Math.max(W,H)*1.1;
+
+    const proj = rotated.map(([x,y,z])=>{
+      const s=fov/(fov+z);
+      return [W/2+x*s, H/2+y*s, z, s];
+    });
+
+    const sortedBonds = bonds.map(([i,j])=>({i,j,z:(rotated[i][2]+rotated[j][2])/2})).sort((a,b)=>a.z-b.z);
+    for (const {i,j,z} of sortedBonds) {
+      const [x1,y1]=proj[i],[x2,y2]=proj[j];
+      const depth=(z+fov)/(2*fov);
+      ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2);
+      ctx.strokeStyle=`rgba(126,232,232,${0.2+depth*0.6})`;
+      ctx.lineWidth=0.5+depth*0.8; ctx.stroke();
+    }
+
+    const sortedAtoms = proj.map((p,i)=>({p,i})).sort((a,b)=>a.p[2]-b.p[2]);
+    for (const {p} of sortedAtoms) {
+      const [x,y,z]=p;
+      const depth=(z+fov)/(2*fov);
+      const r=1.2+depth*2;
+      ctx.beginPath(); ctx.arc(x,y,r*2,0,Math.PI*2);
+      ctx.fillStyle=`rgba(126,232,232,${depth*0.1})`; ctx.fill();
+      ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2);
+      ctx.fillStyle=`rgba(200,240,240,${0.3+depth*0.6})`; ctx.fill();
+    }
+
+    angle += 0.004;
+    requestAnimationFrame(draw);
+  }
+
+  resize();
+  window.addEventListener('resize', resize);
+  draw();
+})();
 (function() {
   const canvas = document.createElement('canvas');
   canvas.style.cssText = 'position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;';
